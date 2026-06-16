@@ -1,0 +1,226 @@
+TITULO: Bree Serif
+
+TEXTO: Monte Serrat
+
+
+PALETA
+
+azul-marinho, é #000080
+
+laranja #ffa500
+
+roxo #993399
+
+
+ 1. Estilo Tech Moderno (Ideal para portfólio de dev)
+Fundo: Tons escuros (preto, grafite ou azul-marinho) com elementos de circuitos, códigos flutuantes ou hexágonos.
+
+Elementos visuais: Linhas finas em neon (verde, ciano ou laranja), trechos de código, UI wireframes translúcidos.
+
+ 4. Dark Portfolio Clean
+Fundo: Simples, fundo escuro fosco (cinza-chumbo ou preto) com leve vinheta.
+
+Elementos visuais: Nome dele, ícones de linguagens (HTML, JS, React, etc.), QR code do portfólio no canto.
+
+
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+:root {
+  /* Cores principais */
+  --cor-azul: #1e2a78;
+  --cor-azul-rgba: rgba(30, 42, 120, 1);
+
+  --cor-laranja: #ff6f3c;
+  --cor-laranja-rgba: rgba(255, 111, 60, 1);
+
+  --cor-roxo: #7f5af0;
+  --cor-roxo-rgba: rgba(127, 90, 240, 1);
+
+  --cor-branco: #ffffff;
+  --cor-branco-rgba: rgba(255, 255, 255, 1);
+
+  /* Cores secundárias/suaves */
+  --cor-azul-claro: #3d50c1;
+  --cor-azul-claro-rgba: rgba(61, 80, 193, 0.8);
+
+  --cor-laranja-claro: #ff916a;
+  --cor-laranja-claro-rgba: rgba(255, 145, 106, 0.8);
+
+  --cor-roxo-claro: #b9a6f7;
+  --cor-roxo-claro-rgba: rgba(185, 166, 247, 0.8);
+
+  --cor-cinza-fundo: #0e0f1b;
+  --cor-cinza-fundo-rgba: rgba(14, 15, 27, 1);
+
+  /* Fontes */
+  --fonte-titulo: 'Bree Serif', serif;
+  --fonte-texto: 'Montserrat', sans-serif;
+}
+
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desenvolvedor web, portífolio, projetos pequenos, médios e grandes">
+    <link rel="stylesheet" href="style.css">
+
+    <!--FavIcon-->
+    <link rel="shortcut icon" type="image/x-icon" href="icon/icon-192.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<title>Laurie Deiman - Portifolio</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="img/Logo.png" alt="">
+		</div>
+	</header>
+	<div class="background-circuit"></div>
+
+	<header>
+		<h1>Laurie Deiman</h1>
+		<h2>Desenvolvedor web Full Stack</h2>
+		<div class="tech-icons">
+			<i class="fab fa-html5"></i>
+			<i class="fab fa-css3-alt"></i>
+			<i class="fab fa-js-square"></i>
+			<i class="fab fa-react"></i>
+			<i class="fab fa-node-js"></i>
+		</div>
+	</header>
+
+	<main>
+		<section class="content">
+			<p>Olá! Sou Laurie Deiman, desenvolvedor web com foco em soluções modernas, interfaces elegantes e código limpo. Especialista em React, Node.js e tudo que envolve front e back-end. Vamos construir algo juntos?</p>
+		</section>
+
+		<div class="qr-code">
+    		<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://seuportfolio.dev&size=100x100" alt="QR Code Portfólio" width="100%" />
+  		</div>
+	</main>
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Cores principais */
+  --cor-azul: #1e2a78;
+  --cor-azul-rgba: rgba(30, 42, 120, 1);
+
+  --cor-laranja: #ff6f3c;
+  --cor-laranja-rgba: rgba(255, 111, 60, 1);
+
+  --cor-roxo: #7f5af0;
+  --cor-roxo-rgba: rgba(127, 90, 240, 1);
+
+  --cor-branco: #ffffff;
+  --cor-branco-rgba: rgba(255, 255, 255, 1);
+
+  /* Cores secundárias/suaves */
+  --cor-azul-claro: #3d50c1;
+  --cor-azul-claro-rgba: rgba(61, 80, 193, 0.8);
+
+  --cor-laranja-claro: #ff916a;
+  --cor-laranja-claro-rgba: rgba(255, 145, 106, 0.8);
+
+  --cor-roxo-claro: #b9a6f7;
+  --cor-roxo-claro-rgba: rgba(185, 166, 247, 0.8);
+
+  --cor-cinza-fundo: #0e0f1b;
+  --cor-cinza-fundo-rgba: rgba(14, 15, 27, 1);
+
+  /* Fontes */
+  --fonte-titulo: 'Bree Serif', serif;
+  --fonte-texto: 'Montserrat', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--cor-cinza-fundo);
+	color: var(--cor-branco);
+	font-family: var(--fonte-texto);
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden; 
+}
+.logo img{
+	width: 160px;
+	height: auto;
+}
+.background-circuit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle, rgba(127, 90, 240, 0.05) 1px, transparent 1px),
+                        radial-gradient(circle, rgba(255, 111, 60, 0.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+}
+
+header{
+	text-align: center;
+	padding: 5rem 1rem 2rem;
+	z-index: 1;
+	position: relative;
+}
+h1{
+	font-family: var(--font-texto);
+	font-size: 3rem;
+	color: var(--cor-laranja);
+}
+h2{
+	color: var(--cor-roxo);
+	font-weight: 400;
+	margin-top: 0.5rem;
+}
+.tech-icons{
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin: 2rem 0;
+	z-index: 1;
+	position: relative;
+}
+.tech-icons i{
+	font-size: 2.5rem;
+	color: var(--cor-azul);
+	transition: transform 0.3s ease;
+}
+.tech-icons i:hover{
+	transform: scale(1.2);
+	color: var(--cor-laranja);
+}
+.content{
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
+	padding: 2rem;
+	z-index: 1;
+	position: relative;
+}
+ .content p{
+ 	color: rgba(255, 255, 255, 0.75);
+ 	line-height: 1.6;
+ }
+.qr-code{
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	padding: 5px;
+	z-index: 1;
+}
